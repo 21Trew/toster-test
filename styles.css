@@ -1,0 +1,408 @@
+@media screen and (max-width : 600px) {
+    .vulc__nav {
+        font-size:1.5em;
+    }
+}
+
+@font-face {
+    font-family: 'Noto Color Emoji';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/notocoloremoji/v1/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXw.0.woff2') format('woff2');
+    unicode-range: U+1f1e6-1f1ff;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/gothampro_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Pro normal';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/gothampro.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Pro thin';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/gothampro_light.ttf');
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12.694px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: auto;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    border: 1px solid red;
+    background-color: #f0f0f0;
+}
+
+/* Header. */
+
+header {
+    width: 390px;
+    height: 33px;
+    background-color: #F19D2F;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12.694px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #2C2B31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.flags {
+    font-family: "Noto Color Emoji";
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main. Page */
+
+.main {
+    height: 92px;
+    width: 390px;
+    background-color: #FFD1AC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-title {
+    width: 218px;
+    height: 31px;
+}
+
+.main-subtitle {
+    font-size: 13.469px;
+}
+
+/* Main. Photo */
+
+.main-photo {
+    background-image: url(./images/main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 390px;
+    height: 281px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.main-photo__offer {
+    width: 103px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10.144px;
+    margin-left: 13px;
+    margin-bottom: 14px;
+
+    background: #F19D2F;
+    border-radius: 7.101px;
+
+    color: #FFF;
+    font-family: 'Gotham Pro';
+    font-size: 10.599px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-photo__offer-countdown {
+    font-size: 21.254px;
+}
+
+.main-photo__price {
+    width: 116px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8.111px;
+    margin-right: 13px;
+    margin-bottom: 14px;
+    
+    background: #37D997;
+    border-radius: 5.677px;
+
+    color: #FFF;
+    font-family: 'Gotham Pro';
+    font-size: 22.301px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-photo__price-old {
+    font-size: 18.077px;
+}
+
+.main-photo__price-old::before {
+    content: '';
+    width: 89px;
+    border-bottom: #E27500 3px solid;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 9.65px;
+    margin-left: -1px;
+}
+
+/* Main. Item */
+
+.main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 358px;
+    /* border: 1px solid green; */
+    margin-top: 11px;
+}
+
+.main-item__header {
+    display: flex;
+    justify-content: space-between;
+    width: 358px;
+}
+
+.main-item__header-rating {
+    font-family: 'Gotham Pro thin';
+    font-weight: 400;
+    font-size: 12.067px;
+    line-height: normal;
+    margin-top: auto;
+}
+
+.main-item__header-logo {
+    background-color: #FFF;
+    height: 17.676px;
+    width: 71.999px;
+}
+
+.main-item__header-feature {
+    margin-top: auto;
+    color: #37D997;
+    font-family: 'Gotham Pro thin';
+    font-weight: 400;
+    font-size: 12.067px;
+    line-height: normal;
+    border-bottom: #37D997 0.5px solid;
+}
+
+h1 {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+/* Slider */
+
+.main-item__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 358px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-slider {
+    margin: 0 -5.4px;
+}
+
+.slick-slide {
+    margin: 0 5.4px;
+}
+
+/* main-item__description */
+
+.main-item__description {
+    width: 358px;
+    font-family: 'Gotham Pro normal';
+    font-size: 15.29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-item__description div {
+    margin-bottom: 12px;
+}
+
+.main-item__description div b {
+    font-family: 'Gotham Pro';
+    font-weight: 700;
+}
+
+.main-item__description-rates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 126px;
+    height: 13px;
+}
+
+.main-item__description-amount {
+    width: 30px;
+    height: 15px;
+    margin-top: -1px;
+    margin-left: 10px;
+    height: fit-content;
+    font-family: 'Gotham Pro normal';
+    font-size: 15.29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* DropList */
+
+.main-item__droplist {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 358px;
+    margin-bottom: 20px;
+}
+
+.droplist-content {
+    display: none;
+}
+
+.droplist-color,
+.droplist-size {
+    width: 170px;
+    min-height: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #2C2B31;
+    font-family: 'Gotham Pro normal';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.droplist-button {
+    width: 170px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: none;
+    margin-top: 4px;
+    font-family: 'Gotham Pro';
+    font-size: 21.69px;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+
+/* 
+
+
+.main-item__list-color div {
+    
+}
+
+
+
+.droplist-color,
+.droplist-size {
+    text-align: center;
+    color: #2C2B31;
+    font-family: 'Gotham Pro normal';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.droplist-button {
+    width: 170px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: none;
+    margin-top: 4px;
+    font-family: 'Gotham Pro';
+    font-size: 21.69px;
+    font-weight: 700;
+    padding-bottom: 2px;
+} */
+
+
+
+/* Main-Button */
+
+.main-button {
+    width: 356px;
+    height: 50px;
+    margin-bottom: 41.38px;
+    /* margin-left: 17px; */
+    background: #37D997;
+    color: #FFF;
+    border-radius: 15px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gotham Pro';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
