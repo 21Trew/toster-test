@@ -14,7 +14,7 @@ function tick() {
     timeInSecs--;
   } else {
     clearInterval(ticker);
-    startTimer(17476); // 5 minutes in seconds
+    startTimer(17476); // seconds
 
   }
 
@@ -29,7 +29,7 @@ function tick() {
 
   document.getElementById("countdown").innerHTML = result;
 }
-startTimer(17476); // 5 minutes in seconds
+startTimer(17476);
 
 
 // Slider
